@@ -1,3 +1,3 @@
 @echo on
-"C:\Users\datlq3.VIETTELGROUP\Downloads\GatePro.jnlp"
+"C:\Users\dat\Downloads\GatePro.jnlp"
 exit
