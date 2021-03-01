@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptfile>
+    <settings program="actiona" version="3.9.2" scriptVersion="1.1.0" os="GNU/Linux"/>
+    <actions>
+        <action name="ActionNoop" version="1.0.0"/>
+        <action name="ActionCommand" version="1.0.0"/>
+        <action name="ActionPixelColor" version="1.0.0"/>
+        <action name="ActionKey" version="1.0.0"/>
+        <action name="ActionReadTextFile" version="1.0.0"/>
+        <action name="ActionWriteText" version="1.0.0"/>
+        <action name="ActionClick" version="1.0.0"/>
+    </actions>
+    <parameters/>
+    <resources/>
+    <script pauseBefore="0" pauseAfter="0">
+        <action name="ActionCommand" pauseAfter="3000">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="parameters">
+                <subParameter name="value" code="0">/home/nito/jre1.8.0_181/master.jnlp</subParameter>
+            </parameter>
+            <parameter name="exitCode">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="exitStatus">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="workingDirectory">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="command">
+                <subParameter name="value" code="0">/home/nito/jre1.8.0_181/bin/javaws</subParameter>
+            </parameter>
+            <parameter name="output">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="processId">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="errorOutput">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+        </action>
+        <action name="ActionNoop" pauseAfter="1000">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+        </action>
+        <action name="ActionPixelColor">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="blueTolerance">
+                <subParameter name="value" code="0">0</subParameter>
+            </parameter>
+            <parameter name="ifFalse">
+                <subParameter name="action" code="0">goto</subParameter>
+                <subParameter name="line" code="0">002</subParameter>
+            </parameter>
+            <parameter name="comparison">
+                <subParameter name="value" code="0">equal</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"></subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="variable">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="greenTolerance">
+                <subParameter name="value" code="0">0</subParameter>
+            </parameter>
+            <parameter name="pixel">
+                <subParameter name="color" code="0">255:221:41</subParameter>
+                <subParameter name="position" code="0">743:454</subParameter>
+            </parameter>
+            <parameter name="ifTrue">
+                <subParameter name="action" code="0">goto</subParameter>
+                <subParameter name="line" code="0">004</subParameter>
+            </parameter>
+            <parameter name="redTolerance">
+                <subParameter name="value" code="0">0</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"></subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">50:50</subParameter>
+                <subParameter name="unit" code="0">1</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">true</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">I</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" pauseAfter="500">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">true</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">R</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">true</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">I</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" pauseAfter="8000">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">true</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">R</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionWriteText">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="noUnicodeCharacters">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="text">
+                <subParameter name="value" code="0">datlq3</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">Tab</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionCommand">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="parameters">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="exitCode">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="exitStatus">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="workingDirectory">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="command">
+                <subParameter name="value" code="0">/home/nito/scripts/autogate/dep.sh</subParameter>
+            </parameter>
+            <parameter name="output">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="processId">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="errorOutput">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+        </action>
+        <action name="ActionReadTextFile">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="firstline">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="mode">
+                <subParameter name="value" code="0">full</subParameter>
+            </parameter>
+            <parameter name="lastline">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="variable">
+                <subParameter name="value" code="0">dep</subParameter>
+            </parameter>
+            <parameter name="file">
+                <subParameter name="value" code="0">/tmp/otp</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionWriteText">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="noUnicodeCharacters">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="text">
+                <subParameter name="value" code="0">$dep</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" pauseAfter="500">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"></subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">50:53.4259</subParameter>
+                <subParameter name="unit" code="0">1</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" pauseAfter="500">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"></subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">50:62</subParameter>
+                <subParameter name="unit" code="0">1</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">Tab</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">Space</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"></subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">52:56.8</subParameter>
+                <subParameter name="unit" code="0">1</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" pauseAfter="7000">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">Tab</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionCommand">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="parameters">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="exitCode">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="exitStatus">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="workingDirectory">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="command">
+                <subParameter name="value" code="0">/home/nito/scripts/autogate/get_otp.sh</subParameter>
+            </parameter>
+            <parameter name="output">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="processId">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+            <parameter name="errorOutput">
+                <subParameter name="value" code="0"></subParameter>
+            </parameter>
+        </action>
+        <action name="ActionReadTextFile">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="firstline">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="mode">
+                <subParameter name="value" code="0">full</subParameter>
+            </parameter>
+            <parameter name="lastline">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="variable">
+                <subParameter name="value" code="0">otp</subParameter>
+            </parameter>
+            <parameter name="file">
+                <subParameter name="value" code="0">/tmp/otp</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionWriteText">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="noUnicodeCharacters">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="text">
+                <subParameter name="value" code="0">$otp</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" pauseAfter="5000">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"></subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">52:70</subParameter>
+                <subParameter name="unit" code="0">1</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey" pauseAfter="500">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">true</subParameter>
+            </parameter>
+            <parameter name="shift">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">Up</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" pauseAfter="2500">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"></subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">40.7813:8.61111</subParameter>
+                <subParameter name="unit" code="0">1</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" pauseAfter="1000">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"></subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">5.88542:15.5556</subParameter>
+                <subParameter name="unit" code="0">1</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" pauseAfter="500">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">2</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"></subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">5.88542:21.9444</subParameter>
+                <subParameter name="unit" code="0">1</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" pauseAfter="500">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">2</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"></subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">5.88542:23.4259</subParameter>
+                <subParameter name="unit" code="0">1</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" pauseAfter="500">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"></subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">5.88542:24.9259</subParameter>
+                <subParameter name="unit" code="0">1</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionKey">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">4</subParameter>
+            </parameter>
+            <parameter name="meta">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="shift">
+                <subParameter name="value" code="0">true</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="alt">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="key">
+                <subParameter name="key" code="0">Down</subParameter>
+                <subParameter name="isQtKey" code="0">true</subParameter>
+            </parameter>
+            <parameter name="ctrl">
+                <subParameter name="value" code="0">false</subParameter>
+            </parameter>
+            <parameter name="type">
+                <subParameter name="value" code="0">Win32</subParameter>
+            </parameter>
+            <parameter name="pause">
+                <subParameter name="value" code="0">10</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"></subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">right</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">4.6875:24.9259</subParameter>
+                <subParameter name="unit" code="0">1</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick" pauseAfter="4000">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"></subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">5:26</subParameter>
+                <subParameter name="unit" code="0">1</subParameter>
+            </parameter>
+        </action>
+        <action name="ActionClick">
+            <exception id="0" action="0" line=""/>
+            <exception id="1" action="0" line=""/>
+            <exception id="32" action="0" line=""/>
+            <exception id="33" action="0" line=""/>
+            <exception id="2" action="1" line=""/>
+            <parameter name="amount">
+                <subParameter name="value" code="0">1</subParameter>
+            </parameter>
+            <parameter name="positionOffset">
+                <subParameter name="value" code="0"></subParameter>
+                <subParameter name="unit" code="0">0</subParameter>
+            </parameter>
+            <parameter name="action">
+                <subParameter name="value" code="0">pressRelease</subParameter>
+            </parameter>
+            <parameter name="button">
+                <subParameter name="value" code="0">left</subParameter>
+            </parameter>
+            <parameter name="position">
+                <subParameter name="value" code="0">33.6458:60.463</subParameter>
+                <subParameter name="unit" code="0">1</subParameter>
+            </parameter>
+        </action>
+    </script>
+</scriptfile>
